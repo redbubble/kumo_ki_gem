@@ -1,4 +1,4 @@
-# KumoKiGem
+# Kumo Ki
 
 Gem for accessing secrets in Amazon's Key Management Service
 
@@ -7,7 +7,7 @@ Gem for accessing secrets in Amazon's Key Management Service
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kumo_ki_gem'
+gem 'kumo_ki'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install kumo_ki_gem
+    $ gem install kumo_ki
 
 ## Usage
 
