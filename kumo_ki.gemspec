@@ -1,15 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kumo_ki_gem/version'
+require 'kumo_ki/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'kumo_ki_gem'
-  spec.version       = KumoKiGem::VERSION
+  spec.name          = 'kumo_ki'
+  spec.version       = KumoKi::VERSION
   spec.authors       = ['Redbubble Delivery Engineering']
   spec.email         = ['developers@redbubble.com']
   spec.summary       = %q{Gem for accessing secrets in Amazon's Key Management Service}
-  spec.homepage      = 'github.com/redbubble'
+  spec.description   = ''
+  spec.homepage      = 'https://github.com/redbubble'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake', '~> 10.0'
+
+  spec.add_runtime_dependency 'aws-sdk', '~> 2'
 end
