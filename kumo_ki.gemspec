@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'kumo_ki'
   spec.version       = KumoKi::VERSION
   spec.authors       = ['Redbubble Delivery Engineering']
-  spec.email         = ['developers@redbubble.com']
+  spec.email         = ['delivery-engineering@redbubble.com']
   spec.summary       = %q{Gem for accessing secrets in Amazon's Key Management Service}
   spec.description   = ''
   spec.homepage      = 'https://github.com/redbubble'
