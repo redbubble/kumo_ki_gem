@@ -1,0 +1,5 @@
+steps:
+  - name: ':rspec: unit-test'
+    command: script/unit_test.sh
+    agents:
+      location: 'aws'
