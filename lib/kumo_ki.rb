@@ -1,4 +1,5 @@
 require 'kumo_ki/version'
+require 'kumo_ki/errors'
 require 'aws-sdk'
 require 'base64'
 
@@ -14,6 +15,8 @@ module KumoKi
       client.decrypt({
         ciphertext_blob: Base64.decode64(cipher_text)
       }).plaintext
+    rescue => e
+      raise KumoKi::DecryptionError.new("There was a problem decrypting your secrets: #{e.message}")
     end
 
     def encrypt_for(env_name, plain_text)
