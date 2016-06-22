@@ -9,7 +9,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kumo_ki'
+gem 'kumo_ki', '~> 1.0' # see semver.org
 ```
 
 And then execute:
