@@ -45,3 +45,20 @@ Contributing
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+Credits
+-------
+
+[![](doc/redbubble.png)][redbubble]
+
+Kumo Ki is maintained and funded by [Redbubble][redbubble].
+
+  [redbubble]: https://www.redbubble.com
+
+License
+-------
+
+    Kumo Ki
+    Copyright (C) 2016 Redbubble
+
+    All rights reserved.
