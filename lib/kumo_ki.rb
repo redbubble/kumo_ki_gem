@@ -15,6 +15,8 @@ module KumoKi
       client.decrypt({
         ciphertext_blob: Base64.decode64(cipher_text)
       }).plaintext
+    rescue Aws::Errors::MissingCredentialsError => e
+      raise KumoKi::KumoKiError.new("No AWS credentials found.  Try setting AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID environment variables")
     rescue => e
       raise KumoKi::DecryptionError.new("There was a problem decrypting your secrets: #{e.message}")
     end
