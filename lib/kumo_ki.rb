@@ -1,6 +1,6 @@
 require 'kumo_ki/version'
 require 'kumo_ki/errors'
-require 'aws-sdk'
+require 'aws-sdk-kms'
 require 'base64'
 
 module KumoKi
